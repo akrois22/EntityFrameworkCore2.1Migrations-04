@@ -6,7 +6,7 @@ namespace Festify.WebRepository.Explore
 {
     public class ExploreContext : DbContext
     {
-        public ExploreContext(DbContextOptions options) : base(options)
+        public ExploreContext(DbContextOptions<ExploreContext> options) : base(options)
         {
         }
 

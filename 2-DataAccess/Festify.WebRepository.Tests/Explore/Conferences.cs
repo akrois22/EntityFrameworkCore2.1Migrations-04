@@ -26,7 +26,7 @@ namespace WebRepository.Explore
             [CallerMemberName] string method = "",
             [CallerFilePath] string file = "")
         {
-            return new ExploreContext(new DbContextOptionsBuilder()
+            return new ExploreContext(new DbContextOptionsBuilder<ExploreContext>()
                 .UseInMemoryDatabase($"{file}.{method}")
                 .Options);
         }
