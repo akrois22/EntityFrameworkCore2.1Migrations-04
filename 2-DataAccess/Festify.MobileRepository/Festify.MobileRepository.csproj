@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20190920205055_AddedSession.cs" />
+    <Compile Remove="Migrations\20190920205055_AddedSession.Designer.cs" />
+    <Compile Remove="Migrations\20190920213246_AddedSession.cs" />
+    <Compile Remove="Migrations\20190920213246_AddedSession.Designer.cs" />
+    <Compile Remove="Migrations\20190920213615_AddedSession.cs" />
+    <Compile Remove="Migrations\20190920213615_AddedSession.Designer.cs" />
+    <Compile Remove="Migrations\20190920221408_AddedSession.cs" />
+    <Compile Remove="Migrations\20190920221408_AddedSession.Designer.cs" />
+    <Compile Remove="Migrations\20190920222800_AddedSession.cs" />
+    <Compile Remove="Migrations\20190920222800_AddedSession.Designer.cs" />
+    <Compile Remove="Migrations\20190923203232_AddedSession.cs" />
+    <Compile Remove="Migrations\20190923203232_AddedSession.Designer.cs" />
+    <Compile Remove="Migrations\20190923203555_AddedSession.cs" />
+    <Compile Remove="Migrations\20190923203555_AddedSession.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\3-Domain\Festify.Domain.Explore\Festify.Domain.Explore.csproj" />
+  </ItemGroup>
+
+</Project>
