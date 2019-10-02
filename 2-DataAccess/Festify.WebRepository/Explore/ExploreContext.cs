@@ -17,11 +17,11 @@ namespace Festify.WebRepository.Explore
             modelBuilder.Entity<Conference>()
                 .HasAlternateKey(x => x.Identity);
 
-            //modelBuilder.Entity<Session>()
-            //    .HasKey(x => x.SessionId);
+            modelBuilder.Entity<Session>()
+                .HasKey(x => x.SessionId);
 
-            //modelBuilder.Entity<Speaker>()
-            //    .HasKey(x => x.SpeakerId);
+            modelBuilder.Entity<Speaker>()
+                .HasKey(x => x.SpeakerId);
 
             //modelBuilder.Entity<Presenter>()
             //    .HasKey(x => x.PresenterId);
