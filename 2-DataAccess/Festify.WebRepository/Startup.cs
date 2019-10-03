@@ -10,12 +10,13 @@ namespace Festify.WebRepository
 {
     public class Startup
     {
-        public static void ConfigureServices(IServiceCollection serviceCollection,
+        public static void ConfigureServices(
+            IServiceCollection services,
             string connectionString)
         {
-            serviceCollection.AddDbContext<ExploreContext>(opt =>
+            services.AddDbContext<ExploreContext>(opt =>
                 opt.UseSqlServer(connectionString));
-            serviceCollection.AddDbContext<PlanContext>(opt =>
+            services.AddDbContext<PlanContext>(opt =>
                 opt.UseSqlServer(connectionString));
         }
     }

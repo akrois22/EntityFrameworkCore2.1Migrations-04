@@ -14,8 +14,10 @@ namespace Festify.MobileShell
         {
             // Configure a service provider.
             var serviceCollection = new ServiceCollection();
-            Startup.ConfigureServices(serviceCollection, "Data Source=Festify.db3");
+            Startup.ConfigureServices(serviceCollection,
+                "Data Source=Festify.db3");
             var serviceProvider = serviceCollection.BuildServiceProvider();
+
             return serviceProvider.GetService<ExploreContext>();
         }
     }

@@ -38,7 +38,8 @@ namespace Festify.Web
             string connectionString = Configuration.GetConnectionString("Festify");
 
             // Configure the DbContext.
-            Festify.WebRepository.Startup.ConfigureServices(services, connectionString);
+            WebRepository.Startup.ConfigureServices(services,
+                Configuration.GetConnectionString("Festify"));
 
 
 

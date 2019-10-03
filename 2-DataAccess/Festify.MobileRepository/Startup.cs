@@ -7,9 +7,10 @@ using System.Text;
 
 namespace Festify.MobileRepository
 {
-    public class Startup
+    public static class Startup
     {
-        public static void ConfigureServices(IServiceCollection serviceCollection,
+        public static void ConfigureServices(
+            IServiceCollection serviceCollection,
             string connectionString)
         {
             serviceCollection.AddDbContext<ExploreContext>(opt => 
