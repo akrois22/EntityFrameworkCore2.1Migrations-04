@@ -17,6 +17,14 @@ namespace Festify.WebRepository.Plan
         {
             modelBuilder.Entity<Submission>()
                 .HasIndex(x => x.ConferenceId);
+
+            modelBuilder.Entity<Submission>()
+                .Property(x => x.DateSubmitted)
+                .HasColumnType("DATETIME2");
+
+            modelBuilder.Entity<Submission>()
+                .Property(x => x.DateAccepted)
+                .HasColumnType("DATETIME2");
         }
     }
 }

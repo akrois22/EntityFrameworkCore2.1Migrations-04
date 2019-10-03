@@ -4,9 +4,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Presentation", "1-Presentation", "{98A583EC-0CCF-4CE7-8FC0-CCD6D4A5C1DE}"
-	ProjectSection(SolutionItems) = preProject
-		1-Presentation\Festify.MobileShell\Festify.db3 = 1-Presentation\Festify.MobileShell\Festify.db3
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Domain", "3-Domain", "{F0C66EF1-3651-4BE7-B846-261CF1A2CA45}"
 EndProject
