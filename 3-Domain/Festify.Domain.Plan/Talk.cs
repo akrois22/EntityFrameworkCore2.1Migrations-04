@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Festify.Domain.Plan
@@ -18,12 +19,13 @@ namespace Festify.Domain.Plan
         public string Abstract { get; set; }
         public IEnumerable<Submission> Submissions => _submissions;
 
-        public Submission Submit(int ConferenceId)
+        public Submission Submit(int conferenceId)
         {
             var submission = new Submission
             {
                 Talk = this,
-                ConferenceId = ConferenceId
+                ConferenceId = conferenceId,
+                DateSubmitted = DateTime.UtcNow
             };
             _submissions.Add(submission);
             return submission;
